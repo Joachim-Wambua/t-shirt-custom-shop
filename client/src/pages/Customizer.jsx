@@ -56,6 +56,29 @@ const Customizer = () => {
 
     try {
       // TODO: Call Backend to generate AI image
+      setGenerateImg(true);
+
+      const response = await fetch("http://localhost:5000/api/v1/dalle", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          aiPrompt,
+        }),
+      });
+
+      const data = await response.json();
+
+      console.log("API Response:", data); // Add this line for debugging
+
+      if (data.photo) {
+        handleDecals(type, `data:image/png;base64,${data.photo[0].b64_json}`);
+      } else {
+        alert(
+          "Invalid response from the server. Photo not found in the response."
+        );
+      }
     } catch (error) {
       alert(error);
     } finally {
@@ -85,6 +108,7 @@ const Customizer = () => {
       default:
         state.isFullTexture = true;
         state.isLogoTexture = true;
+        break;
     }
 
     // After setting the state, activeFilterTab is updated
