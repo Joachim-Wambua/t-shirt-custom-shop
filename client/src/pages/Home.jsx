@@ -19,35 +19,34 @@ const Home = () => {
         <motion.section className="home" {...slideAnimation("left")}>
           <motion.header {...slideAnimation("down")}>
             <img
-              src="./threejs.png"
+              src="./personallogowhite.png"
               alt="logo"
-              className="w-8 h-8 object-contain"
+              className="w-12 h-12 object-contain"
             />
           </motion.header>
 
-          <motion.div className="home-content" {...headContainerAnimation}>
+          <motion.div className="home-content " {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
-              <h1 className="head-text">
+              <h2 className="head-text">
                 CUSTOMIZE <br className="xl:block hidden" /> COOL T-SHIRTS
-              </h1>
+              </h2>
             </motion.div>
             <motion.div
               className="flex flex-col gap-5"
               {...headContentAnimation}
             >
-              <p className="max-w-md font-normal text-gray-600 text-base">
+              <p className="max-w-md font-normal text-slate-300 text-base">
                 Customize your exclusive unique t-shirts with our brand new
                 customization tool. <strong>Unleash Your Creativity!</strong>{" "}
                 and create your own style!
               </p>
 
-              <CustomButton 
+              <CustomButton
                 type="filled"
                 title="Customize It"
-                handleClick = {() => state.intro = false}
+                handleClick={() => (state.intro = false)}
                 customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
-
             </motion.div>
           </motion.div>
         </motion.section>
