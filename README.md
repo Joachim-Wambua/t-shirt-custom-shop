@@ -12,6 +12,12 @@ Welcome to the 3D T-Shirt Customization App, a cutting-edge project that empower
 
 - **AI-Powered Design Generation:** Leverage OpenAI's DALL-E 3 API to use chat prompts for generating logo designs or textures.
 
+## OpenAI Integration
+To integrate with OpenAI's DALL-E 3 API, obtain your API key and add it to the appropriate configuration file (e.g., .env).
+
+## Contributing
+I welcome contributions! Feel free to open an issue or submit a pull request.
+
 ## Getting Started
 
 ### Prerequisites
@@ -39,3 +45,9 @@ Run the project by starting the development server:
 ```bash
 npm run dev
 ```
+
+Open your browser and navigate to http://localhost:5173 to explore the 3D T-Shirt Customization App.
+
+## Acknowledgments
+- Special thanks to OpenAI for powering the AI design generation.
+- Hat tip to the ReactJS and React-Three-Fibre communities for their invaluable contributions.
