@@ -3,9 +3,9 @@
 Welcome to the 3D T-Shirt Customization App, a cutting-edge project that empowers users to personalize their T-shirts in 3D! Built with ReactJS, React-Three-Fibre, and integrated with OpenAI's DALL-E 3 API, this application takes T-shirt customization to the next level.
 
 <div align="center">
-    <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1703971083/f3sa2tp3czxkch5n6nvm.png" alt="Landing Page"
-style="margin-bottom: 10px"    
+    <img src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1703971083/f3sa2tp3czxkch5n6nvm.png" alt="Landing Page"    
     >
+<div style="margin-bottom: 10px"><div/>
 <div align='center' >
         <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
         <img src="https://img.shields.io/badge/-Three_JS-black?style=for-the-badge&logoColor=white&logo=threedotjs&color=000000" alt="three.js" />
